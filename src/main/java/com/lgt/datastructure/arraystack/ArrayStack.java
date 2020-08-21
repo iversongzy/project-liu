@@ -1,4 +1,4 @@
-package com.lgt.datastructures.arraystack;
+package com.lgt.datastructure.arraystack;
 
 public class ArrayStack {
     //栈大小

@@ -1,4 +1,4 @@
-package com.lgt.datastructures.linkedlist;
+package com.lgt.datastructure.linkedlist;
 
 public class Josepfu {
     // 创建一个first节点,当前没有编号

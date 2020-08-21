@@ -1,4 +1,4 @@
-package com.lgt.chapter1;
+package com.lgt.thread;
 
 public class Test {
     public static void main(String[] args) throws InterruptedException {

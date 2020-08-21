@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 import java.util.Scanner;
 

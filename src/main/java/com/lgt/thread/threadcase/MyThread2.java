@@ -1,4 +1,4 @@
-package com.lgt.threadcase;
+package com.lgt.thread.threadcase;
 
 public class MyThread2 implements Runnable {
 

@@ -1,4 +1,4 @@
-package com.lgt.threadcase;
+package com.lgt.thread.threadcase;
 
 public class ThreadTest {
     public static void main(String[] args) {

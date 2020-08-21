@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class ArrayQueue {
     private int maxSize;

@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class FindLostNum {
     public static int[] findLostNum(int[] array) {

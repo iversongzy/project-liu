@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class RemoveKDigits {
     public static void main(String[] args) {

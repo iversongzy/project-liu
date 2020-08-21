@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class MaxSortedDistance {
     public static int getMaxSortedDistance(int[] array) {

@@ -1,4 +1,4 @@
-package com.lgt.sort;
+package com.lgt.datastructure.sort;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

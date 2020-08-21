@@ -1,4 +1,4 @@
-package com.lgt.chapter1;
+package com.lgt.thread;
 
 public class InterruptTest extends Thread {
     @Override

@@ -1,4 +1,4 @@
-package com.lgt.datastructures.linkedlist;
+package com.lgt.datastructure.linkedlist;
 
 public class NewNode {
     int value;

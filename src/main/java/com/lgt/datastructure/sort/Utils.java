@@ -1,4 +1,4 @@
-package com.lgt.sort;
+package com.lgt.datastructure.sort;
 
 public class Utils {
     private Utils() {

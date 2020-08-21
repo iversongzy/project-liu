@@ -1,8 +1,8 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 import java.util.Stack;
 
-public class MyQueue {
+public class MyQueue2 {
     private Stack<Integer> stackA = new Stack<>();
     private Stack<Integer> stackB = new Stack<>();
 
@@ -27,7 +27,7 @@ public class MyQueue {
     }
 
     public static void main(String[] args) {
-        MyQueue myQueue = new MyQueue();
+        MyQueue2 myQueue = new MyQueue2();
         myQueue.enQueue(1);
         myQueue.enQueue(2);
         myQueue.enQueue(3);

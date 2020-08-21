@@ -1,4 +1,4 @@
-package com.lgt.datastructures.recursion;
+package com.lgt.datastructure.recursion;
 
 public class Maze {
     public static void main(String[] args) {

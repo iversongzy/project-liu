@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class BestGoldMining {
     public static void main(String[] args) {

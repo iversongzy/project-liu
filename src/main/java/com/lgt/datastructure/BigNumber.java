@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class BigNumber {
     public static String bigNumberSum(String num1, String num2) {

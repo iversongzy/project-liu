@@ -1,4 +1,4 @@
-package com.lgt.datastructures.recursion;
+package com.lgt.datastructure.recursion;
 
 public class EightQueue {
     //表示共有多少个皇后

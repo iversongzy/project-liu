@@ -1,4 +1,4 @@
-package com.lgt.datastructures;
+package com.lgt.datastructure;
 
 public class SparseArray {
     private int[][] originArray2SparseArray(int[][] originArray) {
