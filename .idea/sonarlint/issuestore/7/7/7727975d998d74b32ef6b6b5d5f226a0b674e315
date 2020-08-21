@@ -1,0 +1,9 @@
+
+K
+java:S2209	"5Change this instance-reference to a static reference.(ýŒ¶½
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+R
+java:S3252	"<Use static access with "java.lang.Thread" for "interrupted".(ýŒ¶½
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€

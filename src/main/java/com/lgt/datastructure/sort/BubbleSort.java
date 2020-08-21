@@ -1,103 +1,83 @@
-package com.lgt.datastructure.sort;
+package com.lgt.sort;
 
 import java.util.Arrays;
 
 public class BubbleSort {
-    public static void bubbleSort1(int[] array) {
+    public static void bubbleSort(int[] array) {
+        int temp = 0;
+        //如果一趟比较下来没有交换说明有序
+        boolean flag = false;
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
+                // 如果前面的数比后面的数大，则交换
                 if (array[j] > array[j + 1]) {
-                    int temp = array[j];
+                    flag = true;
+                    temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
             }
-        }
-    }
-
-    public static void bubbleSort2(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
-            //有序标记
-            boolean isSorted = true;
-            for (int j = 0; j < array.length - 1 - i; j++) {
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
-                    //如果有元素进行交换，就证明不是有序的
-                    isSorted = false;
-                }
-            }
-            if (isSorted) {
+            if (!flag) {
                 break;
+            } else {
+                flag = false;
             }
         }
     }
 
-    public static void bubbleSort3(int[] array) {
-        //记录最后一次交换的位置
+    public static void bubbleSort1(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if(arr[j] > arr[j+1]) {
+                    //交换公式 a = b - a + (b = a);
+                    arr[j] = arr[j+1] - arr[j] + (arr[j+1] = arr[j]);
+                }
+            }
+        }
+    }
+
+    public static void bubbleSort2(int[] arr) {
         int lastExchangeIndex = 0;
-        int sortBorder = array.length - 1;
-        for (int i = 0; i < array.length - 1; i++) {
-            //有序标记
-            boolean isSorted = true;
+        boolean isSorted;
+        int sortBorder = arr.length - 1;
+        for (int i = arr.length - 1; i > 0; i--) {
+            //isSorted = true;
             for (int j = 0; j < sortBorder; j++) {
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
-                    //如果有元素进行交换，就证明不是有序的
+                if(arr[j] > arr[j+1]) {
+                    //如果有交换就证明不是有序的，如果没有交换说明已经有序不需要往下进行了
                     isSorted = false;
-                    //更新为最后一次交换元素的位置
+                    //更新最后一次交换元素的位置
                     lastExchangeIndex = j;
+                    //交换公式 a = b - a + (b = a);
+                    arr[j] = arr[j+1] - arr[j] + (arr[j+1] = arr[j]);
                 }
             }
             sortBorder = lastExchangeIndex;
-            if (isSorted) {
-                break;
-            }
-        }
-    }
-
-    public static void bubbleSort4(int[] array) {
-        int temp;
-        for (int i = 0; i < array.length / 2; i++) {
-            boolean isSorted = true;
-            //奇数轮，从左向右比较和交换
-            for (int j = i; j < array.length - 1 - i; j++) {
-                if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
-                    isSorted = false;
-                }
-            }
-            if (isSorted) {
-                break;
-            }
-            isSorted = true;
-            //偶数轮，从右向左比较和交换
-            for (int j = array.length - 1 - i; j > i; j--) {
-                if (array[j] < array[j - 1]) {
-                    temp = array[j];
-                    array[j] = array[j - 1];
-                    array[j - 1] = temp;
-                    isSorted = false;
-                }
-            }
-            if (isSorted) {
+            if(false) {
                 break;
             }
         }
     }
 
     public static void main(String[] args) {
-        int[] array = new int[]{5, 8, 6, 3, 9, 2, 1, 7};
-        int[] array1 = new int[]{3, 4, 2, 1, 5, 6, 7, 8};
-        //bubbleSort1(array);
-        //bubbleSort2(array);
-        //bubbleSort3(array);
-        bubbleSort4(array);
-        System.out.println(Arrays.toString(array));
+        int arr1[] = {3, 9, -1, 10, 20};
+        bubbleSort2(arr1);
+        System.out.println(Arrays.toString(arr1));
+       /* int[] arr = new int[80000];
+        for (int i = 0; i < 80000; i++) {
+            arr[i] = (int) (Math.random() * 8000000); //生成一个[0, 8000000) 数
+        }
+
+        Date data1 = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date1Str = simpleDateFormat.format(data1);
+        System.out.println("排序前的时间是=" + date1Str);
+
+        //测试冒泡排序
+        bubbleSort(arr);
+
+        Date data2 = new Date();
+        String date2Str = simpleDateFormat.format(data2);
+        System.out.println("排序后的时间是=" + date2Str);*/
     }
 }
